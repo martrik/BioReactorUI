@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		413A62041C1367150080417B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413A62031C1367150080417B /* AppDelegate.swift */; };
+		413A62061C1367150080417B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413A62051C1367150080417B /* ViewController.swift */; };
+		413A62081C1367160080417B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413A62071C1367160080417B /* Assets.xcassets */; };
+		413A620B1C1367160080417B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413A62091C1367160080417B /* Main.storyboard */; };
+		413A62161C1367160080417B /* BioreactorControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413A62151C1367160080417B /* BioreactorControllerTests.swift */; };
+		413A62211C1367160080417B /* BioreactorControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413A62201C1367160080417B /* BioreactorControllerUITests.swift */; };
+		413A62561C1377EF0080417B /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A624D1C1377EF0080417B /* ORSSerialBuffer.m */; };
+		413A62571C1377EF0080417B /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A624F1C1377EF0080417B /* ORSSerialPacketDescriptor.m */; };
+		413A62581C1377EF0080417B /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A62511C1377EF0080417B /* ORSSerialPort.m */; };
+		413A62591C1377EF0080417B /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A62531C1377EF0080417B /* ORSSerialPortManager.m */; };
+		413A625A1C1377EF0080417B /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 413A62551C1377EF0080417B /* ORSSerialRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		413A62121C1367160080417B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413A61F81C1367150080417B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413A61FF1C1367150080417B;
+			remoteInfo = BioreactorController;
+		};
+		413A621D1C1367160080417B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413A61F81C1367150080417B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413A61FF1C1367150080417B;
+			remoteInfo = BioreactorController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		413A62001C1367150080417B /* BioreactorController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioreactorController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413A62031C1367150080417B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		413A62051C1367150080417B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		413A62071C1367160080417B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		413A620A1C1367160080417B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		413A620C1C1367160080417B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413A62111C1367160080417B /* BioreactorControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioreactorControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		413A62151C1367160080417B /* BioreactorControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioreactorControllerTests.swift; sourceTree = "<group>"; };
+		413A62171C1367160080417B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413A621C1C1367160080417B /* BioreactorControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioreactorControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		413A62201C1367160080417B /* BioreactorControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioreactorControllerUITests.swift; sourceTree = "<group>"; };
+		413A62221C1367160080417B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413A62401C1373CF0080417B /* BioreactorController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BioreactorController-Bridging-Header.h"; sourceTree = "<group>"; };
+		413A624C1C1377EF0080417B /* ORSSerialBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialBuffer.h; sourceTree = "<group>"; };
+		413A624D1C1377EF0080417B /* ORSSerialBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialBuffer.m; sourceTree = "<group>"; };
+		413A624E1C1377EF0080417B /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		413A624F1C1377EF0080417B /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		413A62501C1377EF0080417B /* ORSSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPort.h; sourceTree = "<group>"; };
+		413A62511C1377EF0080417B /* ORSSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPort.m; sourceTree = "<group>"; };
+		413A62521C1377EF0080417B /* ORSSerialPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortManager.h; sourceTree = "<group>"; };
+		413A62531C1377EF0080417B /* ORSSerialPortManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortManager.m; sourceTree = "<group>"; };
+		413A62541C1377EF0080417B /* ORSSerialRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSSerialRequest.h; sourceTree = "<group>"; };
+		413A62551C1377EF0080417B /* ORSSerialRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSSerialRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		413A61FD1C1367150080417B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A620E1C1367160080417B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A62191C1367160080417B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		413A61F71C1367150080417B = {
+			isa = PBXGroup;
+			children = (
+				413A62021C1367150080417B /* BioreactorController */,
+				413A62141C1367160080417B /* BioreactorControllerTests */,
+				413A621F1C1367160080417B /* BioreactorControllerUITests */,
+				413A62011C1367150080417B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		413A62011C1367150080417B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				413A62001C1367150080417B /* BioreactorController.app */,
+				413A62111C1367160080417B /* BioreactorControllerTests.xctest */,
+				413A621C1C1367160080417B /* BioreactorControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		413A62021C1367150080417B /* BioreactorController */ = {
+			isa = PBXGroup;
+			children = (
+				413A62031C1367150080417B /* AppDelegate.swift */,
+				413A62051C1367150080417B /* ViewController.swift */,
+				413A622E1C1373010080417B /* Frameworks */,
+				413A62071C1367160080417B /* Assets.xcassets */,
+				413A62091C1367160080417B /* Main.storyboard */,
+				413A620C1C1367160080417B /* Info.plist */,
+			);
+			path = BioreactorController;
+			sourceTree = "<group>";
+		};
+		413A62141C1367160080417B /* BioreactorControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				413A62151C1367160080417B /* BioreactorControllerTests.swift */,
+				413A62171C1367160080417B /* Info.plist */,
+			);
+			path = BioreactorControllerTests;
+			sourceTree = "<group>";
+		};
+		413A621F1C1367160080417B /* BioreactorControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				413A62201C1367160080417B /* BioreactorControllerUITests.swift */,
+				413A62221C1367160080417B /* Info.plist */,
+			);
+			path = BioreactorControllerUITests;
+			sourceTree = "<group>";
+		};
+		413A622E1C1373010080417B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				413A624A1C1373E50080417B /* SerialPort */,
+			);
+			name = Frameworks;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		413A624A1C1373E50080417B /* SerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				413A624C1C1377EF0080417B /* ORSSerialBuffer.h */,
+				413A624D1C1377EF0080417B /* ORSSerialBuffer.m */,
+				413A624E1C1377EF0080417B /* ORSSerialPacketDescriptor.h */,
+				413A624F1C1377EF0080417B /* ORSSerialPacketDescriptor.m */,
+				413A62501C1377EF0080417B /* ORSSerialPort.h */,
+				413A62511C1377EF0080417B /* ORSSerialPort.m */,
+				413A62521C1377EF0080417B /* ORSSerialPortManager.h */,
+				413A62531C1377EF0080417B /* ORSSerialPortManager.m */,
+				413A62541C1377EF0080417B /* ORSSerialRequest.h */,
+				413A62551C1377EF0080417B /* ORSSerialRequest.m */,
+				413A62401C1373CF0080417B /* BioreactorController-Bridging-Header.h */,
+			);
+			name = SerialPort;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		413A61FF1C1367150080417B /* BioreactorController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413A62251C1367160080417B /* Build configuration list for PBXNativeTarget "BioreactorController" */;
+			buildPhases = (
+				413A61FC1C1367150080417B /* Sources */,
+				413A61FD1C1367150080417B /* Frameworks */,
+				413A61FE1C1367150080417B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BioreactorController;
+			productName = BioreactorController;
+			productReference = 413A62001C1367150080417B /* BioreactorController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		413A62101C1367160080417B /* BioreactorControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413A62281C1367160080417B /* Build configuration list for PBXNativeTarget "BioreactorControllerTests" */;
+			buildPhases = (
+				413A620D1C1367160080417B /* Sources */,
+				413A620E1C1367160080417B /* Frameworks */,
+				413A620F1C1367160080417B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				413A62131C1367160080417B /* PBXTargetDependency */,
+			);
+			name = BioreactorControllerTests;
+			productName = BioreactorControllerTests;
+			productReference = 413A62111C1367160080417B /* BioreactorControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		413A621B1C1367160080417B /* BioreactorControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413A622B1C1367160080417B /* Build configuration list for PBXNativeTarget "BioreactorControllerUITests" */;
+			buildPhases = (
+				413A62181C1367160080417B /* Sources */,
+				413A62191C1367160080417B /* Frameworks */,
+				413A621A1C1367160080417B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				413A621E1C1367160080417B /* PBXTargetDependency */,
+			);
+			name = BioreactorControllerUITests;
+			productName = BioreactorControllerUITests;
+			productReference = 413A621C1C1367160080417B /* BioreactorControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		413A61F81C1367150080417B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = MartiSerra;
+				TargetAttributes = {
+					413A61FF1C1367150080417B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					413A62101C1367160080417B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 413A61FF1C1367150080417B;
+					};
+					413A621B1C1367160080417B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 413A61FF1C1367150080417B;
+					};
+				};
+			};
+			buildConfigurationList = 413A61FB1C1367150080417B /* Build configuration list for PBXProject "BioreactorController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 413A61F71C1367150080417B;
+			productRefGroup = 413A62011C1367150080417B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				413A61FF1C1367150080417B /* BioreactorController */,
+				413A62101C1367160080417B /* BioreactorControllerTests */,
+				413A621B1C1367160080417B /* BioreactorControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		413A61FE1C1367150080417B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413A62081C1367160080417B /* Assets.xcassets in Resources */,
+				413A620B1C1367160080417B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A620F1C1367160080417B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A621A1C1367160080417B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		413A61FC1C1367150080417B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413A62061C1367150080417B /* ViewController.swift in Sources */,
+				413A62581C1377EF0080417B /* ORSSerialPort.m in Sources */,
+				413A625A1C1377EF0080417B /* ORSSerialRequest.m in Sources */,
+				413A62571C1377EF0080417B /* ORSSerialPacketDescriptor.m in Sources */,
+				413A62591C1377EF0080417B /* ORSSerialPortManager.m in Sources */,
+				413A62041C1367150080417B /* AppDelegate.swift in Sources */,
+				413A62561C1377EF0080417B /* ORSSerialBuffer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A620D1C1367160080417B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413A62161C1367160080417B /* BioreactorControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A62181C1367160080417B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413A62211C1367160080417B /* BioreactorControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		413A62131C1367160080417B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413A61FF1C1367150080417B /* BioreactorController */;
+			targetProxy = 413A62121C1367160080417B /* PBXContainerItemProxy */;
+		};
+		413A621E1C1367160080417B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413A61FF1C1367150080417B /* BioreactorController */;
+			targetProxy = 413A621D1C1367160080417B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		413A62091C1367160080417B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413A620A1C1367160080417B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		413A62231C1367160080417B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		413A62241C1367160080417B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		413A62261C1367160080417B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BioreactorController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martiserra.BioreactorController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BioreactorController/Source/BioreactorController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		413A62271C1367160080417B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BioreactorController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martiserra.BioreactorController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BioreactorController/Source/BioreactorController-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		413A62291C1367160080417B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BioreactorControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martiserra.BioreactorControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioreactorController.app/Contents/MacOS/BioreactorController";
+			};
+			name = Debug;
+		};
+		413A622A1C1367160080417B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BioreactorControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martiserra.BioreactorControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioreactorController.app/Contents/MacOS/BioreactorController";
+			};
+			name = Release;
+		};
+		413A622C1C1367160080417B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BioreactorControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martiserra.BioreactorControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BioreactorController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		413A622D1C1367160080417B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BioreactorControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.martiserra.BioreactorControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BioreactorController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		413A61FB1C1367150080417B /* Build configuration list for PBXProject "BioreactorController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413A62231C1367160080417B /* Debug */,
+				413A62241C1367160080417B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413A62251C1367160080417B /* Build configuration list for PBXNativeTarget "BioreactorController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413A62261C1367160080417B /* Debug */,
+				413A62271C1367160080417B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		413A62281C1367160080417B /* Build configuration list for PBXNativeTarget "BioreactorControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413A62291C1367160080417B /* Debug */,
+				413A622A1C1367160080417B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		413A622B1C1367160080417B /* Build configuration list for PBXNativeTarget "BioreactorControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413A622C1C1367160080417B /* Debug */,
+				413A622D1C1367160080417B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 413A61F81C1367150080417B /* Project object */;
+}
