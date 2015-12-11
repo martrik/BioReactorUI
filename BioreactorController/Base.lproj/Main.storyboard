@@ -521,11 +521,8 @@
                     </view>
                     <connections>
                         <outlet property="currentLabel" destination="7mT-XU-iSp" id="1ch-31-Grn"/>
-                        <outlet property="currentTempLabel" destination="7mT-XU-iSp" id="YTA-FK-PGt"/>
                         <outlet property="desiredField" destination="7U9-eW-SoP" id="fPe-cx-Su4"/>
-                        <outlet property="desiredTempField" destination="7U9-eW-SoP" id="It3-LV-Xt5"/>
                         <outlet property="statusLabel" destination="3lI-tr-pfU" id="LmJ-tc-6CV"/>
-                        <outlet property="statusTempLabel" destination="3lI-tr-pfU" id="qHK-NU-Z3E"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

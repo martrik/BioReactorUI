@@ -27,12 +27,15 @@ class ViewController: NSViewController, ORSSerialPortDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        serialPort = ORSSerialPort(path: "/dev/tty.uart-84FF49F37B4E051B")
+        
+        serialPort = ORSSerialPort(path: "/dev/cu.usbmodem1411")
         serialPort!.baudRate = 9600
         serialPort!.delegate = self
         serialPort!.open()
-        
+    }
+    
+    func sendString(data: String){
+        serialPort!.sendData(data.dataUsingEncoding(NSUTF8StringEncoding)!)
     }
     
     func serialPortWasRemovedFromSystem(serialPort: ORSSerialPort) {
@@ -61,7 +64,8 @@ class ViewController: NSViewController, ORSSerialPortDelegate {
     
     @IBAction func setNewDesiredValues(sender: AnyObject) {
         desiredField.resignFirstResponder()
-        
+
+        // This isn't working
         let data = desiredField.stringValue.dataUsingEncoding(NSUTF16StringEncoding)
         
         if let data = data {
@@ -69,8 +73,6 @@ class ViewController: NSViewController, ORSSerialPortDelegate {
             serialPort!.sendData(data)
         }
     }
-    
-    
 
     override var representedObject: AnyObject? {
         didSet {
