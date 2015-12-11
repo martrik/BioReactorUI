@@ -11,17 +11,12 @@ import Cocoa
 
 class ViewController: NSViewController, ORSSerialPortDelegate {
 
-    @IBOutlet weak var currentTempLabel: NSTextField!
-    @IBOutlet weak var currentPhLabel: NSTextField!
-    @IBOutlet weak var currentStirringLabel: NSTextField!
+    @IBOutlet weak var currentLabel: NSTextField!
     
-    @IBOutlet weak var desiredTempField: NSTextField!
-    @IBOutlet weak var desiredPhField: NSTextField!
-    @IBOutlet weak var desiredStirringField: NSTextField!
+    @IBOutlet weak var desiredField: NSTextField!
     
-    @IBOutlet weak var statusTempLabel: NSTextField!
-    @IBOutlet weak var statusPhLabel: NSTextField!
-    @IBOutlet weak var statusStirringLabel: NSTextField!
+    @IBOutlet weak var statusLabel: NSTextField!
+   
     
     let serialPortManager = ORSSerialPortManager.sharedSerialPortManager()
 
@@ -55,21 +50,8 @@ class ViewController: NSViewController, ORSSerialPortDelegate {
             var valueArray = inputValue.characters.split{$0 == " "}.map(String.init)
             inputValue = ""
             
-            switch valueArray[0] {
-            case "RT":
-                currentTempLabel.stringValue = valueArray[1]
-                break
-            
-            case "RP":
-                currentPhLabel.stringValue = valueArray[1]
-                break
-            case "RS":
-                currentStirringLabel.stringValue = valueArray[1]
-                break
-                
-            default:
-                print(valueArray[0])
-                break
+            if valueArray[0] == "R" {
+                currentLabel.stringValue = valueArray[1]
             }
             
         } else {
@@ -78,11 +60,9 @@ class ViewController: NSViewController, ORSSerialPortDelegate {
     }
     
     @IBAction func setNewDesiredValues(sender: AnyObject) {
-        desiredPhField.resignFirstResponder()
-        desiredTempField.resignFirstResponder()
-        desiredStirringField.resignFirstResponder()
+        desiredField.resignFirstResponder()
         
-        let data = desiredTempField.stringValue.dataUsingEncoding(NSUTF16StringEncoding)
+        let data = desiredField.stringValue.dataUsingEncoding(NSUTF16StringEncoding)
         
         if let data = data {
            // print(data)
